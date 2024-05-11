@@ -15,7 +15,7 @@ def extract_id_from_url(url):
 
 def lookup_app_by_id(app_id):
     """ 使用iTunes API查找应用并返回bundle ID """
-    response = requests.get(f"https://itunes.apple.com/us/lookup?id={app_id}")
+    response = requests.get(f"https://itunes.apple.com/lookup?id={app_id}")
     response_data = response.json()
     if response_data["resultCount"] > 0:
         return response_data["results"][0]["bundleId"]
@@ -62,7 +62,7 @@ def rename_app_folder(app_path):
     return app_path
 
 def main():
-    url = "https://apps.apple.com/us/app/驴妈妈旅游-特价订酒店旅游景点门票/id443926246"
+    url = "https://apps.apple.com/cn/app/索玛立方体/id6450415992"
     app_id = extract_id_from_url(url)
     print(f"Extracted App ID: {app_id}")
     

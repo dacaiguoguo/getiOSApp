@@ -12,7 +12,7 @@ def extract_id_from_url(url):
 
 def lookup_app_by_id(app_id):
     """ 使用iTunes API查找应用并返回bundle ID """
-    response = requests.get(f"https://itunes.apple.com/us/lookup?id={app_id}")
+    response = requests.get(f"https://itunes.apple.com/lookup?id={app_id}")
     response_data = response.json()
     if response_data["resultCount"] > 0:
         return response_data["results"][0]["bundleId"]
@@ -20,7 +20,7 @@ def lookup_app_by_id(app_id):
         raise ValueError("No results found for the provided ID.")
 
 def main():
-    url = "https://apps.apple.com/us/app/photoroom-%E7%BC%96%E8%BE%91%E7%85%A7%E7%89%87%E5%92%8C%E8%83%8C%E6%99%AF/id1455009060?l=zh-Hans-CN&ppid=d2ffc899-92a4-47c6-bbf4-cfadbea6ddb2"
+    url = "https://apps.apple.com/cn/app/索玛立方体/id6450415992"
     app_id = extract_id_from_url(url)
     print(f"Extracted App ID: {app_id}")
     
