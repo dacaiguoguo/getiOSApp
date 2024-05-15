@@ -26,3 +26,5 @@ https://apps.apple.com/cn/app/索玛立方体/id6450415992
 ### lookreq.py 用于把Charles抓到的post请求上传的图片 提取出来
 
 ### renamejpg 将此函数加入 .zshrc 方法调用，目的是一些图片缓存目录是没有后缀的，方便查看
+
+### transfer_directory.py 把越狱手机上的文件夹传输到mac
