@@ -53,3 +53,6 @@ dkms.conf
 *.ipa
 extracted_ipa
 PhotoRoom
+Remove Objects
+sand
+photoroomsession.json

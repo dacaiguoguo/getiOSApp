@@ -20,3 +20,9 @@ https://apps.apple.com/cn/app/索玛立方体/id6450415992
 ### 3、print(f"ipatool download -b {bundle_id}") 可以直接执行吗？
 
 ### 4、download_app(bundle_id) 下载成功后 帮我zip解压ipa，增加 去除文件夹名字中的 .app 这一步操作
+
+---
+
+### lookreq.py 用于把Charles抓到的post请求上传的图片 提取出来
+
+### renamejpg 将此函数加入 .zshrc 方法调用，目的是一些图片缓存目录是没有后缀的，方便查看
