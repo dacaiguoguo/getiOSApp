@@ -1,49 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-
-# import paramiko
-# from scp import SCPClient
-
-# def ssh_connect_via_tunnel(local_port, username, password):
-#     try:
-#         ssh = paramiko.SSHClient()
-#         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-#         ssh.connect('127.0.0.1', port=local_port, username=username, password=password)
-#         print("SSH connection established")
-#         return ssh
-#     except Exception as e:
-#         print(f"Failed to connect via SSH: {e}")
-#         return None
-
-# def scp_transfer_directory(ssh, remote_dir, local_dir):
-#     try:
-#         with SCPClient(ssh.get_transport()) as scp:
-#             print(f"Transferring from {remote_dir} to {local_dir}")
-#             scp.get(remote_dir, local_path=local_dir, recursive=True)
-#             print("Transfer complete")
-#     except Exception as e:
-#         print(f"Failed to transfer directory: {e}")
-
-# def main():
-#     local_port = 2222
-#     username = 'root'
-#     password = 'alpine'
-#     remote_dir = '/var/mobile/Containers/Data/Application/1879B619-0FD2-4630-8E19-A823538DDBFE'
-#     local_dir = '/Users/yanguosun/Developer/getiOSApp/sand/test'
-
-#     ssh = ssh_connect_via_tunnel(local_port, username, password)
-#     if ssh is None:
-#         print("SSH connection failed")
-#         return
-
-#     try:
-#         scp_transfer_directory(ssh, remote_dir, local_dir)
-#     finally:
-#         ssh.close()
-
-# if __name__ == '__main__':
-#     main()
-
 import paramiko
 from scp import SCPClient
 import os
