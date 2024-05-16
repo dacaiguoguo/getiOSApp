@@ -46,9 +46,9 @@ def main():
     local_port = 2222
     username = 'root'
     password = 'alpine'
-    remote_dir = '/var/mobile/Containers/Data/Application/E4B9D9A2-3F80-42EF-9A0C-AF74F6843065'
-    tar_file = '/var/mobile/Containers/Data/Application/E4B9D9A2-3F80-42EF-9A0C-AF74F6843065.tar.gz'
-    local_file = '/Users/yanguosun/Developer/getiOSApp/sand/SnapEdit.tar.gz'
+    remote_dir = '/var/mobile/Containers/Data/Application/BE321440-772E-4101-BCB0-1B7F4683B146'
+    tar_file = '/var/mobile/Containers/Data/Application/BE321440-772E-4101-BCB0-1B7F4683B146.tar.gz'
+    local_file = '/Users/yanguosun/Developer/getiOSApp/sand/PhotoRoom.tar.gz'
 
     ssh = ssh_connect_via_tunnel(local_port, username, password)
     if ssh is None:
