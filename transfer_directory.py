@@ -90,9 +90,9 @@ def main():
     local_port = 2222
     username = 'root'
     password = 'alpine'
-    remote_dir = '/var/mobile/Containers/Data/Application/1879B619-0FD2-4630-8E19-A823538DDBFE'
-    tar_file = '/var/mobile/Containers/Data/Application/1879B619-0FD2-4630-8E19-A823538DDBFE.tar.gz'
-    local_file = '/Users/yanguosun/Developer/getiOSApp/sand/1879B619-0FD2-4630-8E19-A823538DDBFE.tar.gz'
+    remote_dir = '/var/mobile/Containers/Data/Application/E4B9D9A2-3F80-42EF-9A0C-AF74F6843065'
+    tar_file = '/var/mobile/Containers/Data/Application/E4B9D9A2-3F80-42EF-9A0C-AF74F6843065.tar.gz'
+    local_file = '/Users/yanguosun/Developer/getiOSApp/sand/SnapEdit.tar.gz'
 
     ssh = ssh_connect_via_tunnel(local_port, username, password)
     if ssh is None:
@@ -107,7 +107,7 @@ def main():
         ssh.close()
 
     # 解压传输过来的文件
-    os.system(f'tar -xzf {local_file} -C /Users/yanguosun/Developer/getiOSApp/sand/test')
+    # os.system(f'tar -xzf {local_file} -C /Users/yanguosun/Developer/getiOSApp/sand/SnapEdit')
 
 if __name__ == '__main__':
     main()
